@@ -1,14 +1,81 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/0855794f50.js" crossorigin="anonymous"></script>
+    <title>"MattCurran"</title>
+    <style>
+        *{
+            color: white;
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
 
-    <body>
-        <!---This is a comment-->
-        <h1>Matt Curran</h1>
-        <h2>About Me</h2>
-        <p>Hello my name is Matt Curran I am from Massachusetts. I currently 
-            <br>am a senior at Bridgwater State studying computer science. When
-            <br>I am not doing school work I enjoy watching or playing sports and
-            <br>video games. 
-        </p>
-        <p><a href="inspiration.html"> Inspiration</a></p>
-        <p><a href="images.html"> Images</a></p>
-    </body>
-</html>
+        .container{
+            position: absolute;
+            opacity: 1;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            width: 100%;
+            height: 100%;
+            min-width: 100%;
+            min-height: 100%;
+            object-fit: cover;
+            margin: 0px;
+            padding: 0px;
+            overflow: hidden;
+            background-color: black;
+        }
+
+        .name{
+            position: absolute;
+            top: 25%;
+            left: 20%;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            z-index: 1;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menue{
+            position: absolute;
+            top: 10%;
+            right: 10%;
+            text-align: right;
+            font-family: Arial, Helvetica, sans-serif; 
+        }
+
+        html, body {
+            height:100%;
+            padding:0;
+            margin:0;
+        }
+        
+
+    </style>
+</head>
+
+<body>
+    <div class="name">
+    <h1>Matt Curran</h1>
+    <h3>This is my homepage.</h3>
+    </div>
+
+    <div class="container">
+        <video src="background.mp4" muted loop autoplay width="100%" height="100%"></video>
+    </div>
+    
+    <div class="menue">
+        <ul class="fa-ul">
+            <li><a href="aboutMe.html"></a><i class="fa-solid fa-person"></i>About Me</li>
+            <li><i class="fa-solid fa-file"></i>Resume</li>
+        </ul>
+    </div>
+</body>
